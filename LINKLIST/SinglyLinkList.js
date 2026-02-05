@@ -34,9 +34,22 @@ const printList=()=>{
     console.log(result + "Null")
 }
 
+const getlength=()=>{
+    let current = head
+    let count = 0 
+
+    while(current!==null){
+        count++;
+        current = current.next
+    }
+    console.log("Length of the List" + count)
+    return count
+}
+
 addnode(10)
 addnode(20)
 addnode(30)
 addnode(40)
 
 printList()
+getlength()
